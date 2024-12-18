@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+/// Finding Compound Interest
+
+
+main()
+{
+	int principle,frequency, timeYear;
+	double interest;
+	double add,power;
+	double amount;
+	double divide;
+	double ans;
+
+	clrscr();
+
+	printf("Enter Principle : ");
+	scanf("%d",&principle);
+
+	printf("Enter Interest : ");
+	scanf("%ld",&interest);
+
+	printf("Enter Frequency : ");
+	scanf("%d",&frequency);
+
+	printf("Enter TimeYear : ");
+	scanf("%d",&timeYear);
+
+	power = frequency * timeYear;
+	divide =  interest  / 100 * frequency;
+	add = 1 + divide;
+	amount = principle * pow(add,power);
+
+	printf("Amount : %lf\n",amount);
+
+
+	ans = amount - principle;
+
+	printf("Answer : %ld",ans);
+
+	getch();
+
+
+}
