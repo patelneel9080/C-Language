@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+{
+	int x,y;
+
+	clrscr();
+
+	printf("Enter value of x : ");
+	scanf("%d",&x);
+
+	printf("Enter value of y : ");
+	scanf("%d",&y);
+
+	x = x + y; // 1 + 3
+	y = x - y;
+	x = x - y;
+
+	printf("Value of x is %d\n",x);
+	printf("Value of y is %d",y);
+
+	getch();
+}
